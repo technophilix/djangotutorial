@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body style="width: 100%; padding: 2%">
+
+<h1>Paste your text...</h1>
+<form action="{% url 'dataprocesscontroller' %} " method="post">
+
+    {% csrf_token %}
+
+  <textarea placeholder="Enter your text here" style="box-shadow: aqua 1px 1px 1px 1px" cols="50" rows="10" name="textp"></textarea>
+
+  <br/>  <input type="submit" value="Submit">
+
+</form>
+
+</body>
+</html>
