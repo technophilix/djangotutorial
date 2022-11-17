@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from django.http import HttpResponse
+from ourfirstapp.utils import *
 
 
 # View act as controller
@@ -24,8 +25,8 @@ def dataprocessing(req):
 
 def dataprocesscontroller(req):
     text = req.POST.get("textp")
-    # print(text)
+    v_count = count_vowel(text)
     data = {
-        "text": text,
+        "vowel": v_count,
     }
     return render(req, 'ourfirstapp/dataprocessingresult.html', data)
