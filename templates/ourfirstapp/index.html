@@ -1,16 +1,19 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>{{ title }}</title>
-</head>
-<body>
+{% extends 'ourfirstapp/base.html' %}
+{% block content %}
+<div class="container-fluid my-5 px-5">
+    <div class="row">
+        <div class="col-sm-3"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, blanditiis, dignissimos eos hic magnam, necessitatibus odit praesentium repellendus rerum tenetur ut voluptas! Architecto assumenda commodi eveniet nemo quam voluptate voluptates.</div>
+     <div class="col-sm-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad architecto cumque debitis doloremque, ea eveniet exercitationem hic impedit magni natus officia optio pariatur quasi, qui rem sequi totam ut, voluptatem!</div>
+<div class="col-sm-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad architecto cumque debitis doloremque, ea eveniet exercitationem hic impedit magni natus officia optio pariatur quasi, qui rem sequi totam ut, voluptatem!</div>
+<div class="col-sm-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad architecto cumque debitis doloremque, ea eveniet exercitationem hic impedit magni natus officia optio pariatur quasi, qui rem sequi totam ut, voluptatem!</div>
 
-<a href="{% url 'ourfirstapp-about' %}">About Us</a> <br/>
-<a href="{% url 'ourfirstapp-dataprocessing' %}">Data Processing</a>
+    </div>
+   <div class="row mt-5">
+        <div class="col-sm-3"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, blanditiis, dignissimos eos hic magnam, necessitatibus odit praesentium repellendus rerum tenetur ut voluptas! Architecto assumenda commodi eveniet nemo quam voluptate voluptates.</div>
+     <div class="col-sm-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad architecto cumque debitis doloremque, ea eveniet exercitationem hic impedit magni natus officia optio pariatur quasi, qui rem sequi totam ut, voluptatem!</div>
+<div class="col-sm-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad architecto cumque debitis doloremque, ea eveniet exercitationem hic impedit magni natus officia optio pariatur quasi, qui rem sequi totam ut, voluptatem!</div>
+<div class="col-sm-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad architecto cumque debitis doloremque, ea eveniet exercitationem hic impedit magni natus officia optio pariatur quasi, qui rem sequi totam ut, voluptatem!</div>
 
+    </div>
+{% endblock %}
 
-<h1 style="color:blue">Hello {{ name }} and age is {{ age }}</h1>
-<p style="text-align: justify"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aperiam beatae consequatur cupiditate debitis dicta expedita fugit harum illum incidunt ipsa iure minus mollitia nisi nostrum possimus praesentium quod quos recusandae, repudiandae, rerum similique sunt totam unde, velit. Accusantium aliquam asperiores aut beatae consectetur cum doloribus eos, esse est et facere facilis fugiat iste laborum libero, minus modi omnis pariatur perspiciatis placeat porro quae quasi quia quibusdam quidem saepe sit soluta sunt ullam velit voluptas voluptate voluptates voluptatum! Aliquam aliquid amet assumenda corporis dolorem dolorum eligendi eum excepturi fuga, nam odit optio perferendis, praesentium reiciendis rerum sed, tempore? At beatae ea facere harum, inventore iure provident quod recusandae suscipit ut? Aperiam architecto commodi consectetur consequuntur cupiditate dicta eaque enim error excepturi exercitationem hic id ipsa ipsam minima mollitia neque quae quasi quo rerum sunt tempora, temporibus veniam voluptatem! Accusamus aliquid et recusandae vitae? Autem debitis enim harum inventore sapiente voluptas voluptate? Alias commodi delectus dolorum eaque enim esse eveniet excepturi, impedit incidunt ipsa ipsum iusto, mollitia optio perferendis quia sequi soluta, suscipit tempore! A, ab accusamus alias consequatur corporis debitis deleniti dolorem excepturi fugit laboriosam libero magni maxime modi odio odit pariatur quis rerum soluta? Consequatur dolore sed vel veniam!</p>
-</body>
-</html>

@@ -20,7 +20,10 @@ def aboutus(req):
 
 
 def dataprocessing(req):
-    return render(req, 'ourfirstapp/dataprocessing.html')
+    data = {
+        "titleggg": "Data Processing",
+    }
+    return render(req, 'ourfirstapp/dataprocessing.html', data)
 
 
 def dataprocesscontroller(req):

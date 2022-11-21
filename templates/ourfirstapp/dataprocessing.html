@@ -1,21 +1,30 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body style="width: 100%; padding: 2%">
 
-<h1>Paste your text...</h1>
-<form action="{% url 'dataprocesscontroller' %} " method="post">
+{% extends 'ourfirstapp/base.html' %}
+{% block content %}
+{#grid system of bootstrap#}
+<div class="container-fluid my-5 px-5">
 
-    {% csrf_token %}
+    <div class="row">
+        <div class="col-sm-4">
 
-  <textarea placeholder="Enter your text here" style="box-shadow: aqua 1px 1px 1px 1px" cols="50" rows="10" name="textp"></textarea>
+           <img src="https://img.freepik.com/free-vector/floral-card_53876-91231.jpg" class="img-fluid" style="width: 120px; height: 120px">
 
-  <br/>  <input type="submit" value="Submit">
+        </div>
+        <div class="col-sm-8 text-justify">Lorem ipsum dolor sit amet, <span class="font-weight-bold">consectetur adipisicing </span> elit. Asperiores assumenda corporis, culpa cum cupiditate, deleniti deserunt doloribus eligendi et facilis illo iure nesciunt non officia officiis optio porro quae qui recusandae reprehenderit rerum similique temporibus velit. A alias amet deserunt ea est illo officiis pariatur perspiciatis saepe temporibus? Accusantium harum laborum minima numquam quae quod repellat sit ullam ut vero! Accusamus architecto assumenda at aut consequatur dolore dolores ea eligendi exercitationem fugiat, illum nihil possimus quis, reprehenderit saepe veniam veritatis. Accusamus dolores, earum eius inventore minima numquam suscipit ut? Aliquid delectus ea enim, explicabo, minus mollitia, nihil nisi optio placeat provident quibusdam quisquam ratione rem soluta ut veritatis voluptatibus? Adipisci consectetur ducimus hic ipsum minima quis ratione sint tempora voluptatibus.
 
-</form>
+       <p><button class="btn btn-danger">Click Me</button></p>
+            <p><button class="btn btn-dark">Click Me</button></p>
+            <p><button class="btn btn-success">Click Me</button></p>
+            <p><button class="btn btn-warning">Click Me</button></p>
+            <p><button class="btn btn-primary">Click Me</button></p>
 
-</body>
-</html>
+
+        </div>
+
+
+
+
+    </div>
+
+</div>
+{% endblock %}
