@@ -2,7 +2,12 @@
 {% block content %}
 <div class="container-fluid my-5 px-5">
     <div class="row">
-        <div class="col-sm-3"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, blanditiis, dignissimos eos hic magnam, necessitatibus odit praesentium repellendus rerum tenetur ut voluptas! Architecto assumenda commodi eveniet nemo quam voluptate voluptates.</div>
+
+
+
+        <div class="col-sm-3"> {{ "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, blanditiis, dignissimos eos hic magnam, necessitatibus odit praesentium repellendus rerum tenetur ut voluptas! Architecto assumenda commodi eveniet nemo quam voluptate voluptates. "| upper }}   </div>
+
+
      <div class="col-sm-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad architecto cumque debitis doloremque, ea eveniet exercitationem hic impedit magni natus officia optio pariatur quasi, qui rem sequi totam ut, voluptatem!</div>
 <div class="col-sm-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad architecto cumque debitis doloremque, ea eveniet exercitationem hic impedit magni natus officia optio pariatur quasi, qui rem sequi totam ut, voluptatem!</div>
 <div class="col-sm-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad architecto cumque debitis doloremque, ea eveniet exercitationem hic impedit magni natus officia optio pariatur quasi, qui rem sequi totam ut, voluptatem!</div>
@@ -15,5 +20,12 @@
 <div class="col-sm-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad architecto cumque debitis doloremque, ea eveniet exercitationem hic impedit magni natus officia optio pariatur quasi, qui rem sequi totam ut, voluptatem!</div>
 
     </div>
+
+
+   {{ name |capfirst|safe}}
+
+
+
 {% endblock %}
 
+</div>

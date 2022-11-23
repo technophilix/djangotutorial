@@ -9,7 +9,7 @@ from ourfirstapp.utils import *
 def index(req):
     data = {
         "title": "Home Page",
-        "name": "Sujoy",
+        "name": "<h1 style='color: RED'>Sujoy</h1>",
         "age": 24
     }
     return render(req, 'ourfirstapp/index.html', data)
