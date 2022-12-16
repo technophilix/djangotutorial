@@ -5,3 +5,13 @@ def count_vowel(text):
         if x in vowels:
             count = count + 1
     return count
+
+
+def fakelogincheck(username, password):
+    if username == "cdcju" and password == "cdcju":
+        return True
+    else:
+        return False
+
+
+

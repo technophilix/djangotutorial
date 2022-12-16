@@ -1,0 +1,46 @@
+{% extends 'ourfirstapp/base.html' %}
+
+{% block content %}
+    <style>
+
+    .login {
+
+        padding: 2%;
+        margin: 2%;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        border-radius: 5px;
+    }
+</style>
+
+   <div class="row">
+   <div class="col-sm-8"></div>
+    <div class="col-sm-4">
+<div class="login">
+
+    {% if messages %}
+    {% for m in messages %}
+
+        <div class="alert alert-danger" role="alert">
+  {{ m }}
+</div>
+        {% endfor %}
+
+    {% endif %}
+
+        <form action="{% url 'logincontroller' %}" method="post">
+            {% csrf_token %}
+            <label>Username</label> <input type="text" name="username" placeholder="Enter your username" class="form-control" required> <br>
+            <label>Password</label> <input type="password" name="password" placeholder="Enter your password" class="form-control" required> <br>
+
+        <input type="submit" class="btn btn-danger" value="Login">
+
+        </form>
+
+
+</div>
+    </div>
+
+   </div>
+
+
+{% endblock %}

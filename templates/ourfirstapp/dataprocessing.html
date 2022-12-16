@@ -7,13 +7,13 @@
     <div class="row">
     <div class="col-sm-12">
 
-<form action="" method="post">
+<form action="{%  url 'dataprocesscontroller' %}" method="post">
     {% csrf_token %}
     <h1>Registration</h1>
-  <label>Name</label>  <input type="text" class="form-control " name="" > <br/>
-  <label>Email</label>  <input type="email" class="form-control" > <br/>
-   <label>Email</label>  <input type="phone" class="form-control" > <br/>
-    <label> Address </label> <textarea class="form-control"></textarea><br/>
+  <label>Name</label>  <input type="text" class="form-control " name="name" > <br/>
+  <label>Email</label>  <input type="email" class="form-control" name="email"> <br/>
+   <label>Phone</label>  <input type="phone" class="form-control" name="phone" > <br/>
+    <label> Address </label> <textarea class="form-control" name="address"></textarea><br/>
 <input type="submit" class="btn btn-success w-100" value="Join"><br/>
 
 </form>
